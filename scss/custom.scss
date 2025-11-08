@@ -1,32 +1,47 @@
 // Custom.scss
 // This is the file you will want to update to customize your page.
-
-// Import Google fonts here
-
-
-
-// Include any default variable overrides here (colors, font sizes, font family, etc..)
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400&display=swap');
 
 
+// Bootstrap variable overrides
+$primary: #A04ADD;
+$secondary: #3B53C7;
+$success: #A4D882;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #f2f2f2;
+$dark: #181853;
 
-// Adjust nav link hover color here
+// Set body background color
+$body-bg: $light;
 
+// Typography variables
+$font-family-base: 'Source Sans 3', sans-serif;
+$headings-font-family: 'Libre Baskerville', serif;
 
+// Font sizes
+$h1-font-size: 3.052rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
 
-// Typography
-// Change font family for base text
+// Navbar settings
+$navbar-dark-color: $light;
+$navbar-dark-hover-color: $primary;
 
-
-// Change font family for headings
-
-
-
-// Change font sizes for h1-h6 using values in assignment
-
-
-
+// Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Add additional custom code here
+// Additional customizations
+.navbar-brand {
+  font-family: 'Libre Baskerville', serif;
+}
 
-// Target .navbar-brand and change font-family to use 'Libre Baskerville'.
+footer {
+  background-color: $dark;
+  color: $light;
+}
